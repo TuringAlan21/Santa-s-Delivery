@@ -136,7 +136,7 @@ li{
     }
 
     .sub-nav, nav, .boxes, .hero{
-        width: 90%;
+        width: 100%;
     }
     .boxes{
         display: grid;
@@ -160,7 +160,7 @@ li{
     #view-more{
         display: block;
         position: absolute;
-        margin-top: 50%;
+        margin-top: 60%;
     }
     nav{
         display: flex;
