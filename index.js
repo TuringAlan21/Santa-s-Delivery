@@ -17,14 +17,17 @@ bars.addEventListener('click', function() {
 
 viewMore.addEventListener('click', function(){
     box.forEach(item => {
-        item.style.display = 'flex';
-        viewMore.textContent = 'View Less';
-        box.style.height = '2rem';
-        box.style.width = '2rem';
         if(!item.style.display === 'none'){
             item.style.display = 'none';
             viewMore.textContent = 'View More';
+        }else if(item.style.display = 'flex'){
+            viewMore.textContent = 'View Less';
+            box.style.height = '2rem';
+            box.style.width = '2rem';
         }
+        
+
+
     })
 })
 
