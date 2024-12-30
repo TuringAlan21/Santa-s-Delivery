@@ -156,16 +156,11 @@ li{
     
 
 
-    .view-more{
+    #view-more{
         display: block;
         position: absolute;
         margin-top: 50%;
     }
-
-    .view-less{
-        display: none;
-    }
-
     nav{
         display: flex;
         justify-content: center;

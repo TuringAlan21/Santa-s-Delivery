@@ -15,19 +15,27 @@ bars.addEventListener('click', function() {
     });
 });
 
-viewMore.addEventListener('click', function(){
-    box.forEach(item => {
-        item.style.display = 'grid';
-        item.style.gridTemplateColumns = 'repeat(3, 1fr)';
-        viewMore.textContent = 'View Less';
-        viewMore.position = 'absolute';
-        item.style.width = '8rem';
-        item.style.height = '8rem';
-        if(!item.style.display === 'none'){
-            item.style.display = 'none';
-            viewMore.textContent = 'View More';
+
+let isExpanded = false; // Flag to track state
+
+viewMore.addEventListener('click', function () {
+    box.forEach((item, index) => {
+        if (isExpanded) {
+            // Hide all boxes except the first two
+            if (index > 1) {
+                item.style.display = 'none';
+            }
+            viewMore.textContent = 'View More'; // Update button text
+        } else {
+            // Show all boxes
+            item.style.display = 'grid';
+            item.style.gridTemplateColumns = 'repeat(3, 1fr)';
+            item.style.width = '8rem';
+            item.style.height = '8rem';
+            viewMore.textContent = 'View Less'; // Update button text
         }
-    })
-})
+    });
+    isExpanded = !isExpanded; // Toggle state
+});
 
 
