@@ -132,7 +132,7 @@ li{
         overflow-x:hidden;
         display: flex;
         flex-direction: column;
-        align-self: center;
+        margin: 0;
     }
 
     .sub-nav, nav, .boxes, .hero{
