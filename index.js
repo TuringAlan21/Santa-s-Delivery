@@ -21,7 +21,7 @@ viewMore.addEventListener('click', function(){
         viewMore.textContent = 'View Less';
         if(!item.style.display === 'none'){
             item.style.display = 'none';
-            viewMore.textContent = 'View Lore'
+            viewMore.textContent = 'View More'
         }
     })
 })
