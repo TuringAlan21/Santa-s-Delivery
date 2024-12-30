@@ -17,7 +17,8 @@ bars.addEventListener('click', function() {
 
 viewMore.addEventListener('click', function(){
     box.forEach(item => {
-        item.style.display = 'flex';
+        item.style.display = 'grid';
+        item.style.gridTemplateColumns = 'repeat(3, 1fr)';
         viewMore.textContent = 'View Less';
         if(!item.style.display === 'none'){
             item.style.display = 'none';
