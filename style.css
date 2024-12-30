@@ -1,0 +1,179 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
+nav{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.nav-par {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+li:hover{
+cursor: pointer;
+text-decoration: underline;
+}
+
+.fa-comment{
+    cursor: pointer;
+}
+
+.home{
+    margin-right: 40px;
+}
+
+.fa-bars{
+    margin-left: 40px;
+    /* position: fixed; */
+    font-size: larger;
+}
+
+.hero-par, #hero-heading, .hero-date{
+    margin:0;
+    color: white;
+}
+
+.hero{
+    background-image: url(https://wallpapercave.com/uwp/uwp4420841.jpeg);
+    color: white;
+    width: 50%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    justify-self: center;
+    align-self: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero-par{
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.fa-comment{
+    margin-top: 10px;
+}
+li{
+    font-weight: bold;
+}
+.boxes{
+    align-self: center;
+    width: 50%;
+    height: 50%;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-image: url(https://wallpapercave.com/uwp/uwp4467766.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.box{
+    background-image: url(https://wallpapercave.com/wp/wp13467127.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.box:hover{
+    cursor: pointer;
+}
+#view-more{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    position: absolute;
+    justify-self: center;
+    text-transform: capitalize;
+    margin-top: 22%;
+    display: none;
+}
+#view-more:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.sub-nav{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color:blue;
+    color: silver;
+    font-weight: bold;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media(max-width:768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x:hidden;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .sub-nav, nav, .boxes, .hero{
+        width: 90%;
+    }
+    .boxes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box{
+        display: none;
+        width: 30%;
+        height: 30%;
+    }
+    .one, .two{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        width: 60%;
+        height: 40%;
+    }
+    
+
+
+    #view-more{
+        display: block;
+        position: absolute;
+        margin-left: 35%;
+        margin-top: 50%;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        background-color: blue;
+        color: white;
+        box-sizing: border-box;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .fa-bars{
+        margin-right: 2rem;
+    }
+}
+
+
