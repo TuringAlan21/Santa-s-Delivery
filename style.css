@@ -136,7 +136,7 @@ li{
     }
 
     .sub-nav, nav, .boxes, .hero{
-        width: 100%;
+        width: 100vw;
     }
     .boxes{
         display: grid;
