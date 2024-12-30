@@ -138,8 +138,8 @@ li{
         width: 90%;
     }
     .boxes{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .box{
@@ -150,18 +150,22 @@ li{
     .one, .two{
         display: grid;
         grid-template-rows: repeat(1, 1fr);
-        width: 12rem;
-        height: 12rem;
+        width: 8rem;
+        height: 8rem;
     }
     
 
 
-    #view-more{
+    .view-more{
         display: block;
         position: absolute;
-        margin-left: 35%;
         margin-top: 50%;
     }
+
+    .view-less{
+        display: none;
+    }
+
     nav{
         display: flex;
         justify-content: center;

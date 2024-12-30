@@ -20,6 +20,9 @@ viewMore.addEventListener('click', function(){
         item.style.display = 'grid';
         item.style.gridTemplateColumns = 'repeat(3, 1fr)';
         viewMore.textContent = 'View Less';
+        viewMore.position = 'absolute';
+        item.style.width = '8rem';
+        item.style.height = '8rem';
         if(!item.style.display === 'none'){
             item.style.display = 'none';
             viewMore.textContent = 'View More';
